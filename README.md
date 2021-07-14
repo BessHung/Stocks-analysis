@@ -5,9 +5,9 @@ Steve’s parents have a great interest in green energy productions, so they are
 
 ## Results
 1. Below is the refactored code with instructions. Here are some differences from the original code:
-- create the arrays for three output value: tickerVolumes, tickerStartingPrices and tickerEndingPrices (1b) 
-- create a variable, tickerIndex (1a) to access the correct index for the four different arrays and get the value of tickerVolumes, tickerStartingPrices and tickerEndingPrices for each ticker (2a)
-- Loop through the arrays and output the data (4)
+- create the arrays for three output value: tickerVolumes, tickerStartingPrices and tickerEndingPrices *(1b)*
+- create a variable, tickerIndex *(1a)* to access the correct index for the four different arrays and get the value of tickerVolumes, tickerStartingPrices and tickerEndingPrices for each ticker *(2a)*
+- Loop through the arrays and output the data *(4)*
 
 ```VBA
 '1a) Create a ticker Index
@@ -60,11 +60,14 @@ Steve’s parents have a great interest in green energy productions, so they are
 ```
 2. Stocks performance between 2017 and 2018
 
+Obviously, the price of two stocks, ENPH and RUN are increasing in both years, their total volume in 2018 are about two or three times more than 2017 as well. We can assume that these two companies are growing rapidly. Therefore, it is recommended to invest ENPH and RUN stocks. However, as the dataset shows, the green energy stocks are not stable enough. It may take a risk of losing money on the investment.
 
 ###### 2017 stock performance versus 2018 stock performance
 <img src="https://github.com/BessHung/Stocks-analysis/blob/31b7918bbc6afa0a202afd316f00775a7ed9403c/Resources/stock_performance_2017.png" width=35% height=35%> <img src="https://github.com/BessHung/Stocks-analysis/blob/31b7918bbc6afa0a202afd316f00775a7ed9403c/Resources/stock_performance_2018.png" width=35% height=35%>
 
 3. Execution times of the original script and the refactored script.
+
+Compare the execution times with both scripts in 2017 and 2018, the refactored script has saved around 0.7sec in each year. Here are the timer screenshots for executing original script and refactored script.
 
 ###### 2017 original script versus 2017 refactored script
 <img src="https://github.com/BessHung/Stocks-analysis/blob/68794e5e88b88cc386912eb12dbe57e8014cedf1/Resources/VBA_original_2017.png" width="400" height="200"> <img src="https://github.com/BessHung/Stocks-analysis/blob/68794e5e88b88cc386912eb12dbe57e8014cedf1/Resources/VBA_Challenge_2017.png" width="400" height="200">
@@ -74,3 +77,10 @@ Steve’s parents have a great interest in green energy productions, so they are
 <img src="https://github.com/BessHung/Stocks-analysis/blob/68794e5e88b88cc386912eb12dbe57e8014cedf1/Resources/VBA_original_2018.png" width="400" height="200"> <img src="https://github.com/BessHung/Stocks-analysis/blob/68794e5e88b88cc386912eb12dbe57e8014cedf1/Resources/VBA_Challenge_2018.png" width="400" height="200">
 
 ## Summary
+- The advantages or disadvantages of refactoring code
+
+Improve programming performance is the biggest advantage for code refactoring, it not only saves time on executing the macro but makes the scripts more clear to read. However, it usually takes time to restructure the code and the worst, it may cause some unexpected errors happened. 
+
+- Apply these pros and cons to refactoring the original VBA script 
+
+The refactored script is successfully saving the execution times and makes the macro more organized by using arrays. However, it was causing some errors during the refactoring and it took time and efforts to figure it out, especially for the fresh programmer.
