@@ -62,8 +62,7 @@ Steve’s parents have a great interest in green energy productions, so they are
 
 
 ###### 2017 stock performance versus 2018 stock performance
-![](Resources/stock_performance_2017.png) ![](Resources/stock_performance_2018.png)
-
+<img src="https://github.com/BessHung/Stocks-analysis/blob/31b7918bbc6afa0a202afd316f00775a7ed9403c/Resources/stock_performance_2017.png" width=35% height=35%> <img src="https://github.com/BessHung/Stocks-analysis/blob/31b7918bbc6afa0a202afd316f00775a7ed9403c/Resources/stock_performance_2018.png" width=35% height=35%>
 
 3. Execution times of the original script and the refactored script.
 
